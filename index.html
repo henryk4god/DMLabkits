@@ -210,6 +210,44 @@
             margin-right: 8px;
         }
 
+        /* Go Back Button Styles */
+        .go-back-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .go-back-btn {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .go-back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(67, 97, 238, 0.4);
+        }
+
+        .go-back-btn::before {
+            content: '←';
+            margin-right: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .go-back-btn:hover::before {
+            transform: translateX(-4px);
+        }
+
         /* Responsive design */
         @media (max-width: 768px) {
             header h1 {
@@ -222,6 +260,11 @@
             
             .section-title {
                 font-size: 1.6rem;
+            }
+            
+            .go-back-container {
+                top: 10px;
+                left: 10px;
             }
         }
 
@@ -237,10 +280,20 @@
             .tool-card {
                 padding: 20px;
             }
+            
+            .go-back-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Go Back Button Container -->
+    <div class="go-back-container" id="goBackContainer" style="display: none;">
+        <a href="#" class="go-back-btn" id="goBackBtn">Back to Dashboard</a>
+    </div>
+    
     <header>
         <div class="container">
             <h1>Pro AI Tool kits for Content and Digital Marketing</h1>
@@ -403,9 +456,41 @@
             });
         }
 
+        // Function to check if user is on a tool page
+        function isToolPage() {
+            const currentUrl = window.location.href;
+            return tools.some(tool => tool.url !== "#" && currentUrl.includes(new URL(tool.url).hostname));
+        }
+
+        // Function to handle go back button
+        function setupGoBackButton() {
+            const goBackContainer = document.getElementById('goBackContainer');
+            const goBackBtn = document.getElementById('goBackBtn');
+            
+            // Show the button if user is on a tool page
+            if (isToolPage()) {
+                goBackContainer.style.display = 'block';
+                
+                // Set the button to go back to the dashboard
+                goBackBtn.href = window.location.origin + window.location.pathname;
+                
+                // Prevent default behavior and use history if possible
+                goBackBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Try to go back in history, otherwise redirect to dashboard
+                    if (window.history.length > 1) {
+                        window.history.back();
+                    } else {
+                        window.location.href = window.location.origin + window.location.pathname;
+                    }
+                });
+            }
+        }
+
         // Initialize the page when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
             populateTools();
+            setupGoBackButton();
         });
     </script>
 </body>
