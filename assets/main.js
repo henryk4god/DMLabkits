@@ -1,6 +1,14 @@
 // Tool data - Add your tools here
 const tools = [
     {
+        id: 'asked-questions',
+        name: 'Most Asked Questions',
+        description: 'Discover trending questions with proven market demand and scalable product ideas',
+        type: 'Problem Finder Tool',
+        url: 'https://henryk4god.github.io/maq/‎',
+        icon: '❓'
+    },
+    {
         id: 'social-media-content',
         name: 'Answer To Your Ask Questions',
         description: 'Get best content to post all social media',
@@ -15,14 +23,6 @@ const tools = [
         type: 'Unique Content Generator Tool',
         url: 'https://henryk4god.github.io/aicg/',
         icon: '🤖'
-    },
-    {
-        id: 'asked-questions',
-        name: 'Most Asked Questions',
-        description: 'Discover trending questions with proven market demand and scalable product ideas',
-        type: 'Problem Finder Tool',
-        url: 'https://henryk4god.github.io/maq/‎',
-        icon: '❓'
     },
     {
         id: 'idea-customer',
