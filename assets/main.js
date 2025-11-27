@@ -5,7 +5,7 @@ const tools = [
         name: 'Most Asked Questions',
         description: 'Discover trending questions with proven market demand and scalable product ideas',
         type: 'Problem Finder Tool',
-        url: 'https://henryk4god.github.io/maq/‎',
+        url: 'https://henryk4god.github.io/maq/',
         icon: '❓'
     },
     {
