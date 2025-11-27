@@ -5,7 +5,7 @@ const tools = [
         name: 'Answer To Your Ask Questions',
         description: 'Get best content to post all social media',
         type: 'All Social Media Content Generator Tool',
-        url: 'https://michyritebiz.systeme.io/smpe',
+        url: 'https://henryk4god.github.io/atyq/',
         icon: '📱'
     },
     {
@@ -13,7 +13,7 @@ const tools = [
         name: 'AI Post Generator',
         description: 'Enter a content idea and optional story — get 5 ready-to-use social media posts',
         type: 'Unique Content Generator Tool',
-        url: 'https://michyritebiz.systeme.io/smpost',
+        url: 'https://henryk4god.github.io/aicg/',
         icon: '🤖'
     },
     {
@@ -21,7 +21,7 @@ const tools = [
         name: 'Most Asked Questions',
         description: 'Discover trending questions with proven market demand and scalable product ideas',
         type: 'Problem Finder Tool',
-        url: 'https://michyritebiz.systeme.io/maq',
+        url: 'https://henryk4god.github.io/maq/‎',
         icon: '❓'
     },
     {
@@ -29,7 +29,7 @@ const tools = [
         name: 'Know Your Idea Custom',
         description: 'Enter a website URL to discover the perfect customer profile',
         type: 'Know Your Idea Customer Tool',
-        url: 'https://michyritebiz.systeme.io/ta',
+        url: 'https://henryk4god.github.io/kyic/',
         icon: '🎯'
     },
     {
@@ -45,7 +45,7 @@ const tools = [
         name: 'Unique Products Ideas',
         description: 'Mix your expertise with trending questions to generate innovative digital products',
         type: 'Your own unique Products Maker',
-        url: 'https://michyritebiz.systeme.io/mix',
+        url: 'https://henryk4god.github.io/mixniches/',
         icon: '✨'
     },
     {
