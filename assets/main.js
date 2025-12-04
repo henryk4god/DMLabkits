@@ -1,77 +1,159 @@
 // Tool data - Add your tools here
 const tools = [
+    
     {
-        id: 'asked-questions',
-        name: 'Most Asked Questions',
-        description: 'Discover trending questions with proven market demand and scalable product ideas',
-        type: 'Problem Finder Tool',
-        url: 'https://henryk4god.github.io/maq/',
-        icon: '❓'
-    },
-    {
-        id: 'social-media-content',
-        name: 'Answer To Your Ask Questions',
-        description: 'Get best content to post all social media',
-        type: 'All Social Media Content Generator Tool',
-        url: 'https://henryk4god.github.io/atyq/',
-        icon: '📱'
-    },
-    {
-        id: 'ai-post-generator',
-        name: 'AI Post Generator',
-        description: 'Enter a content idea and optional story — get 5 ready-to-use social media posts',
-        type: 'Unique Content Generator Tool',
-        url: 'https://henryk4god.github.io/aicg/',
-        icon: '🤖'
-    },
-    {
-        id: 'idea-customer',
-        name: 'Know Your Idea Custom',
-        description: 'Enter a website URL to discover the perfect customer profile',
-        type: 'Know Your Idea Customer Tool',
-        url: 'https://henryk4god.github.io/kyic/',
-        icon: '🎯'
-    },
-    {
-        id: 'product-ideas',
-        name: 'Digital Products Ideas Finder',
-        description: 'Get best digital Products Ideas for all hot niches',
-        type: 'Product Finder Tool',
-        url: 'https://henryk4god.github.io/Digital-Product-Ideas-Generator/',
-        icon: '💡'
-    },
-    {
-        id: 'unique-products',
-        name: 'Unique Products Ideas',
-        description: 'Mix your expertise with trending questions to generate innovative digital products',
-        type: 'Your own unique Products Maker',
-        url: 'https://henryk4god.github.io/mixniches/',
-        icon: '✨'
-    },
-    {
-        id: 'products-builder',
-        name: 'Digital Products Builder',
-        description: 'Step by step guide to build course from starting to end',
-        type: 'Course Developer Guide Tool',
-        url: '#',
-        icon: '🏗️'
-    },
-    {
-        id: 'professional-prompt',
-        name: 'Professional Prompt',
-        description: 'Powerful prompt to employ and get results',
-        type: 'Ebook',
-        url: '#',
-        icon: '📘'
-    },
-    {
-        id: 'upgrade-course',
-        name: 'Upgrade Course',
-        description: 'Join our promaster class to learn how bot kit like pro',
-        type: 'Training',
-        url: 'https://henryk4god.github.io/Upgrade-/',
-        icon: '🎓'
-    }
+    id: 'digital-products-ideas-finder',
+    name: 'Digital Products Ideas Finder',
+    description: 'Discover profitable digital product ideas across trending niches',
+    type: 'Product Finder Tool',
+    url: 'https://henryk4god.github.io/Digital-Product-Ideas-Generator/',
+    icon: '💡'
+},
+{
+    id: 'most-asked-questions',
+    name: 'Most Asked Questions',
+    description: 'Find trending questions with proven market demand and scalable product ideas',
+    type: 'Problem Finder Tool',
+    url: 'https://henryk4god.github.io/maq/',
+    icon: '❓'
+},
+{
+    id: 'unique-products-idea-finder',
+    name: 'Unique Products Idea Finder',
+    description: 'Mix your expertise with trending questions to generate innovative digital products',
+    type: 'Product Maker Tool',
+    url: 'https://henryk4god.github.io/mixniches/',
+    icon: '✨'
+},
+{
+    id: 'know-your-customer-avatar',
+    name: 'Know Your Customer Avatar',
+    description: 'Create detailed customer profiles to understand your target audience',
+    type: 'Customer Research Tool',
+    url: 'https://henryk4god.github.io/avatar/',
+    icon: '👥'
+},
+{
+    id: 'product-big-promise',
+    name: 'The Product Big Promise',
+    description: 'Craft compelling product promises that resonate with your audience',
+    type: 'Value Proposition Tool',
+    url: 'https://henryk4god.github.io/bigresult/',
+    icon: '🎯'
+},
+{
+    id: 'product-outline-pain-points',
+    name: 'Develop Product Outline Using Pain Points',
+    description: 'Structure your product content around customer pain points and solutions',
+    type: 'Product Development Tool',
+    url: 'https://henryk4god.github.io/avatarpoutline/',
+    icon: '📝'
+},
+{
+    id: 'product-outline-features',
+    name: 'Develop Product Outline Using Features Product',
+    description: 'Build comprehensive product outlines based on features and benefits',
+    type: 'Product Development Tool',
+    url: 'https://henryk4god.github.io/yourpo/',
+    icon: '🏗️'
+},
+{
+    id: 'build-product-content',
+    name: 'Build Your Product Content',
+    description: 'Generate complete product content including modules, lessons, and materials',
+    type: 'Content Creation Tool',
+    url: 'https://henryk4god.github.io/prodgenerator/',
+    icon: '📚'
+},
+{
+    id: 'generate-sales-copy',
+    name: 'Generate Sales Copy',
+    description: 'Create persuasive sales copy that converts visitors into customers',
+    type: 'Copywriting Tool',
+    url: 'https://henryk4god.github.io/salescopy/',
+    icon: '💰'
+},
+{
+    id: 'generate-ad-copy',
+    name: 'Generate Ad-Copy',
+    description: 'Craft high-converting ad copy for various advertising platforms',
+    type: 'Advertising Tool',
+    url: 'https://henryk4god.github.io/adcopy/',
+    icon: '📢'
+},
+{
+    id: 'generate-email-sequence',
+    name: 'Generate Email Sequence',
+    description: 'Build effective email sequences for onboarding, nurturing, and sales',
+    type: 'Email Marketing Tool',
+    url: 'https://henryk4god.github.io/emailseq/',
+    icon: '📧'
+},
+{
+    id: 'generate-lead-magnet',
+    name: 'Generate Lead Magnet',
+    description: 'Create valuable lead magnets to grow your email list',
+    type: 'Lead Generation Tool',
+    url: 'https://henryk4god.github.io/leadmagnet/',
+    icon: '🧲'
+},
+{
+    id: 'generate-prompt-for-mockups',
+    name: 'Generate Prompt For Mockups',
+    description: 'Create AI prompts for generating professional product mockups and images',
+    type: 'Design Tool',
+    url: 'https://henryk4god.github.io/imagegen/',
+    icon: '🎨'
+},
+{
+    id: 'know-your-competitor-customer',
+    name: 'Know Your Competitor Customer',
+    description: 'Analyze competitor websites to understand their customer profiles',
+    type: 'Competitor Research Tool',
+    url: 'https://henryk4god.github.io/kyic/',
+    icon: '🔍'
+},
+{
+    id: 'social-media-content-1',
+    name: 'Generate Social Media Content 1',
+    description: 'AI-powered social media post generator with content ideas and stories',
+    type: 'Social Media Tool',
+    url: 'https://henryk4god.github.io/aicg/',
+    icon: '🤖'
+},
+{
+    id: 'social-media-content-2',
+    name: 'Generate Social Media Content 2',
+    description: 'Get ready-to-use content for all social media platforms',
+    type: 'Social Media Tool',
+    url: 'https://henryk4god.github.io/atyq/',
+    icon: '📱'
+},
+{
+    id: 'social-media-content-3',
+    name: 'Generate Social Media Content 3',
+    description: 'Generate social media content with engaging stories and answers',
+    type: 'Social Media Tool',
+    url: 'https://henryk4god.github.io/answithstory/',
+    icon: '📝'
+},
+{
+    id: 'facebook-ad-campaign',
+    name: 'Facebook Ad Campaign',
+    description: 'Plan and structure complete Facebook advertising campaigns',
+    type: 'Advertising Tool',
+    url: 'https://henryk4god.github.io/fbadcamp/',
+    icon: '📊'
+},
+{
+    id: 'generate-product-bonus',
+    name: 'Generate Product Bonus',
+    description: 'Create valuable bonuses to increase product perceived value and conversions',
+    type: 'Upsell Tool',
+    url: 'https://henryk4god.github.io/bonus/',
+    icon: '🎁'
+}
+    
 ];
 
 // DOM Elements
